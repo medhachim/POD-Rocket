@@ -1,0 +1,6 @@
+{
+  "name": "POD Analytics Pro",
+  "description": "Amazon Merch & Print-On-Demand research dashboard with BSR tracking, viral trend finder, evergreen low-competition niches, and competitor spy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
