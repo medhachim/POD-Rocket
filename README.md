@@ -2,12 +2,17 @@
 
 <div align="center">
 
+
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![Status](https://img.shields.io/badge/Status-Active%20Production-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<br>
+<br>
+<br>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/750b01b2-2fc9-40bb-ae3d-f9c177c0351c" />
 
 <p align="center">
   <b>The next-generation intelligence and analytics dashboard for Merch on Demand, KDP, and Print-on-Demand sellers.</b>
