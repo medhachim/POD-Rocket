@@ -15,8 +15,29 @@ import {
   Zap,
   Layers,
   Database,
-  Scale
+  Scale,
+  Coffee
 } from 'lucide-react';
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
 export function Sidebar() {
   const { currentTab, setCurrentTab, mockMode, activeProviderStatus } = useApi();
@@ -81,7 +102,7 @@ export function Sidebar() {
           {!collapsed && (
             <div className="flex flex-col min-w-0">
               <span className="font-bold text-white text-base tracking-tight truncate flex items-center gap-1.5">
-                POD Analytics <span className="text-cyan-400 text-xs px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-800/50 font-mono">PRO</span>
+                POD Rocket <span className="text-cyan-400 text-xs px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-800/50 font-mono">PRO</span>
               </span>
               <span className="text-[11px] text-slate-400 font-medium truncate">
                 Amazon Merch Intelligence
@@ -147,6 +168,60 @@ export function Sidebar() {
             </button>
           );
         })}
+      </div>
+
+      {/* Support & Credits */}
+      <div className="px-3 py-3 border-t border-slate-800 flex flex-col items-center gap-2.5">
+        {!collapsed ? (
+          <>
+            <a
+              href="https://ko-fi.com/J3F024TQY1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                height={36}
+                style={{ border: 0, height: 36 }}
+                src="https://storage.ko-fi.com/cdn/kofi2.png?v=6"
+                alt="Buy Me a Coffee at ko-fi.com"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/medhachim_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-pink-400 transition-colors"
+            >
+              <span>
+                Built by <span className="font-semibold text-slate-200">MedHachim</span>
+              </span>
+              <InstagramIcon className="w-4 h-4" />
+            </a>
+          </>
+        ) : (
+          <>
+            <a
+              href="https://ko-fi.com/J3F024TQY1"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Buy Me a Coffee at ko-fi.com"
+              className="p-2 rounded-lg text-slate-400 hover:text-sky-400 hover:bg-slate-800 transition-colors"
+            >
+              <Coffee className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/medhachim_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Built by MedHachim"
+              className="p-2 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-slate-800 transition-colors"
+            >
+              <InstagramIcon className="w-5 h-5" />
+            </a>
+          </>
+        )}
       </div>
 
       {/* System Status Footer */}

@@ -111,7 +111,7 @@ export function Header() {
       {/* Breadcrumb Navigation */}
       <div className="flex items-center gap-2 text-sm min-w-0">
         <span className="text-slate-500 hover:text-slate-400 cursor-pointer" onClick={() => setCurrentTab('overview')}>
-          POD Analytics
+          POD Rocket
         </span>
         <ChevronRight className="w-4 h-4 text-slate-600 flex-shrink-0" />
         <span className="font-semibold text-white tracking-wide truncate">
