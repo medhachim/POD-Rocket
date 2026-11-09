@@ -91,7 +91,7 @@ Finding winning designs in Print-On-Demand usually requires multiple subscriptio
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/pod-rocket.git
+   git clone https://github.com/medhachim/pod-rocket.git
    cd pod-rocket
    ```
 
